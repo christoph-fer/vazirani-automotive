@@ -4,11 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vazirani Automotive</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../styles/shul.css" />
     <meta name="viewport" content="width=device-width" />
     <meta name="theme-color" content="#1E1E24" />
 </head>
 <body>
+    <img class="drawer-icon" height="17px" src="../images/ham_menu.svg">
+    <div class="drawer">
+       
+        <div class="nav-mobile" style="justify-self: right;">
+            <a href="">Shul</a>     
+        </div>
+        <div class="divider"></div>
+        <div class="nav-mobile" style="justify-self: left;">          
+            <a id="services-mobile">Services</a>
+            <div class="drop-down">
+                <a href="">Design</a>
+                <div class="divider"></div>
+                <a href="">Engineering</a>
+            </div>
+        </div>
+    </div>
     <div class="wrapper">
         <div class="header">
             <div class="shul-v-logo">
@@ -19,8 +36,14 @@
             </div>
             <div class="divider"></div>
             <div class="nav" style="justify-self: left;">          
-                <a href="">Services</a>
+                <a id="services">Services</a>
+                <div class="drop-down">
+                    <a href="">Design</a>
+                    <div class="divider"></div>
+                    <a href="">Engineering</a>
+                </div>
             </div>
+            
             <div class="shul-vazirani-logo">
                 <img src="../images/vazirani-full-logo-yellow.png">
             </div>
@@ -56,11 +79,13 @@
                         <p>Carbon Fibre<br>
                         Monocoque Cell</p>
                     </div>
+                    <div class="divider"></div>
                     <div>
                         <img src="../images/EV POWERTRAIN NEW_GOLD2.png">
                         <p>Electric Powertrain<br>
                         >1000hp</p>
                     </div>
+                    <div class="divider"></div>
                     <div>
                         <img src="../images/BODY_ILLUSTRATION_GOLD2.png">
                         <p>Carbon Fibre<br>
@@ -105,6 +130,17 @@
             </div>
         </div>
     </div>   
+    <script>
+        $("#services").click(function(){
+            $(".drop-down").toggleClass("active");
+        });
+        $("#services-mobile").click(function(){
+            $(".drop-down").toggleClass("active");
+        });
+        $(".drawer-icon").click(function(){
+            $(".drawer").toggleClass("active");
+        });
+    </script>
 </body>
 
 </html>
