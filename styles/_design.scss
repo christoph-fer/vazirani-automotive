@@ -1,0 +1,167 @@
+.design-sec1{
+    display: grid;
+    background-image: url("../images/TALLER\ SKETCH.jpg");
+    background-color: #151517;
+    height: 120vh;
+    //min-height: 900px;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media screen and (max-width: 1024px){
+        height: 75vh;
+    }
+    @media screen and (max-width: 640px){
+        height: 65vh;
+        background-size: contain;
+    }
+    .design-feature-icons{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        height: fit-content;
+        margin-top: 20vh;
+        width: 60vw;
+        justify-self: center;
+        @media screen and (max-width: 1440px){
+            width: 80vw;
+        }
+        @media screen and (max-width: 1024px){
+            width: 80vw;
+        }
+        @media screen and (max-height: 700px){
+            margin-top: 130px;
+        }
+        @media screen and (max-width: 640px){
+            width: 95vw;
+        }
+        >div{
+            display: grid;
+            justify-self: center;
+            justify-items: center;
+            img{
+                object-fit: contain;
+                width: 25px;
+                height: 100%;
+                @media screen and (max-width: 640px){
+                    width: 20px;
+                }
+            }
+            p{
+                font-family: 'Arian';
+                font-weight: bold;
+                font-size: 16px;
+                color: $shul_yellow;
+                text-align: center;
+                justify-self: center;
+                margin-block-start: 0.5em;
+                @media screen and (max-width: 640px){
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+.design-sec2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: fit-content;
+    margin-top: 7vw;
+    @media screen and (max-width: 1024px){
+        margin-top: unset;
+      grid-template-columns: 1fr;
+    }
+    .shul-gallery{ 
+        @media screen and (max-width: 1024px){
+            grid-row: 2;
+        }
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .shul-design-development{
+        color: $shul_blue;
+        padding: 0vw 5vw;
+        font-family: "Futura";
+        @media screen and (max-width: 1024px){
+            padding: 6vw;
+            grid-row: 1;
+        }
+
+        h2{
+            font-size: 32px;
+        }
+        p{
+            font-size: 18px;
+            opacity: 0.5;
+        }
+        ul{
+            font-size: 18px;
+            padding-inline-start: 12px;
+            li{
+                padding: 5px;
+            }
+        }
+        @media screen and (max-width: 640px){
+            h2{
+                font-size: 24px;
+            }
+            p{
+                font-size: 14px;
+            }
+            ul{
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.our-team-experience{
+    display: grid;
+    padding: 5vw 5vw 0vw 5vw;
+    h2{
+        font-family: "Futura";
+        font-size: 32px;
+        color: $shul_blue;
+        @media screen and (max-width: 640px){
+            font-size: 24px;
+        }
+    }
+    .company-logos{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        justify-items: center;
+        div{
+            width: 5vw;
+            margin: 5vw 0vw;
+            @media screen and (max-width: 1024px){
+                width: 7vw;
+            }
+            img{
+                object-fit: contain;
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.our-customers{
+    display: grid;
+    padding: 0vw 5vw;
+    height: fit-content;
+    h2{
+        font-family: "Futura";
+        font-size: 32px;
+        color: $shul_blue;
+        @media screen and (max-width: 640px){
+            font-size: 24px;
+        }
+    }
+    img{
+        object-fit: contain;
+        width: 100%;
+        //height: 100%;
+    }
+}
