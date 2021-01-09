@@ -11,6 +11,12 @@
 
 @font-face {
   font-family: Futura;
+  src: url("../fonts/Futura/Futura Book font.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Futura;
   src: url("../fonts/Futura/futura medium bt.ttf");
   font-weight: 600;
 }
@@ -35,6 +41,26 @@
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+}
+
+.we-build-sexxy {
+  position: fixed;
+  color: #FED697;
+  font-family: "Arian";
+  font-weight: bold;
+  font-size: 20px;
+  top: 50vh;
+  left: -45px;
+  -webkit-transform: rotateZ(-90deg);
+          transform: rotateZ(-90deg);
+  letter-spacing: 3px;
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 1024px) {
+  .we-build-sexxy {
+    display: none;
   }
 }
 
@@ -295,6 +321,30 @@
   }
 }
 
+@media screen and (max-width: 640px) {
+  .design-sec1 .design-feature-icons {
+    row-gap: 70px;
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .design-sec1 .design-feature-icons .push {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / span 2;
+    margin-left: -5vw;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .design-sec1 .design-feature-icons .push2 {
+    grid-column: 3 / span -1;
+    margin-left: -25vw;
+  }
+}
+
 .design-sec1 .design-feature-icons > div {
   display: -ms-grid;
   display: grid;
@@ -480,6 +530,240 @@
 .our-customers img {
   -o-object-fit: contain;
      object-fit: contain;
+  width: 100%;
+}
+
+.eng-sec1 {
+  display: -ms-grid;
+  display: grid;
+}
+
+.eng-sec1 .eng-feature-icons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto auto;
+      grid-template-columns: auto auto auto auto auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 20vh;
+  width: 60vw;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+@media screen and (max-width: 1440px) {
+  .eng-sec1 .eng-feature-icons {
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .eng-sec1 .eng-feature-icons {
+    width: 80vw;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .eng-sec1 .eng-feature-icons {
+    margin-top: 130px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .eng-sec1 .eng-feature-icons {
+    width: 95vw;
+    row-gap: 30px;
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .eng-sec1 .eng-feature-icons .push {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / span 2;
+    margin-left: -5vw;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .eng-sec1 .eng-feature-icons .push2 {
+    grid-column: 3 / span -1;
+    margin-left: -25vw;
+  }
+}
+
+.eng-sec1 .eng-feature-icons > div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  justify-items: center;
+  height: 100px;
+}
+
+.eng-sec1 .eng-feature-icons > div img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 25px;
+}
+
+@media screen and (max-width: 640px) {
+  .eng-sec1 .eng-feature-icons > div img {
+    height: 22px;
+  }
+}
+
+.eng-sec1 .eng-feature-icons > div p {
+  font-family: 'Arian';
+  font-weight: bold;
+  font-size: 16px;
+  color: #FED697;
+  text-align: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -webkit-margin-before: 0.5em;
+          margin-block-start: 0.5em;
+}
+
+@media screen and (max-width: 640px) {
+  .eng-sec1 .eng-feature-icons > div p {
+    font-size: 13px;
+  }
+}
+
+.battery .battery-desc {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 20vw;
+      grid-template-columns: auto 20vw;
+  font-family: "Futura";
+  color: #DCD4C8;
+  padding: 7vw 5vw 5vw 5vw;
+}
+
+@media screen and (max-width: 1024px) {
+  .battery .battery-desc {
+    -ms-grid-columns: auto 35vw;
+        grid-template-columns: auto 35vw;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .battery .battery-desc {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: auto 30vw;
+        grid-template-rows: auto 30vw;
+    padding: 15vw 5vw 5vw 5vw;
+    row-gap: 5vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .battery .battery-desc {
+    -ms-grid-rows: auto 40vw;
+        grid-template-rows: auto 40vw;
+  }
+}
+
+.battery .battery-desc h2 {
+  font-size: 42px;
+}
+
+@media screen and (max-width: 640px) {
+  .battery .battery-desc h2 {
+    font-size: 32px;
+  }
+}
+
+.battery .battery-desc p {
+  max-width: 800px;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 640px) {
+  .battery .battery-desc p {
+    font-size: 16px;
+  }
+}
+
+.battery .battery-desc div img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
+.battery .battery-details {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  font-family: "Futura";
+  color: #DCD4C8;
+  padding: 1vw 5vw 5vw 5vw;
+}
+
+@media screen and (max-width: 1024px) {
+  .battery .battery-details {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.battery .battery-details > div > div {
+  margin-bottom: 3vw;
+}
+
+.battery .battery-details h3 {
+  font-size: 26px;
+  font-weight: 400;
+  -webkit-margin-after: 0.2em;
+          margin-block-end: 0.2em;
+}
+
+@media screen and (max-width: 640px) {
+  .battery .battery-details h3 {
+    font-size: 22px;
+  }
+}
+
+.battery .battery-details p {
+  color: #FED697;
+  max-width: 600px;
+  font-size: 16px;
+  opacity: 0.6;
+}
+
+.battery .battery-details .battery-details-pic {
+  grid-column: 0 / span 3;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../images/Fotor2 TALLER (1)_editedtransparent.png");
+}
+
+@media screen and (max-width: 1164px) {
+  .battery .battery-details .battery-details-pic {
+    background-size: contain;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .battery .battery-details .battery-details-pic {
+    height: 60vw;
+    width: 100%;
+    background-size: cover;
+  }
+}
+
+.battery .battery-details .battery-details-pic img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 100%;
   width: 100%;
 }
 
@@ -713,7 +997,7 @@ a {
   height: 50px;
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 640px) {
   .header .divider {
     display: none;
   }

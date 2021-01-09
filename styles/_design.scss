@@ -33,6 +33,22 @@
         @media screen and (max-width: 640px){
             width: 95vw;
         }
+        @media screen and (max-width: 640px){
+            row-gap: 70px;
+            grid-template-columns: auto auto auto;
+        }
+        .push{
+            @media screen and (max-width: 640px){
+                grid-column: 1 / span 2;
+                margin-left: -5vw;
+            }
+        }
+        .push2{
+            @media screen and (max-width: 640px){
+                grid-column: 3 / span -1;
+                margin-left: -25vw;
+            }
+        }
         >div{
             display: grid;
             justify-self: center;

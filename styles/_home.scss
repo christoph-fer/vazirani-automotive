@@ -14,6 +14,22 @@
       }
     }
   }
+
+  .we-build-sexxy{
+    position: fixed;
+    color: $shul_yellow;
+    font-family: "Arian";
+    font-weight: bold;
+    font-size: 20px;
+    top: 50vh;
+    left: -45px;
+    transform: rotateZ(-90deg);
+    letter-spacing: 3px;
+    opacity: 0.5;
+    @media screen and (max-width: 1024px){
+      display: none;
+    }
+  }
   
   .home-sec2{
     font-family: "Arian";
