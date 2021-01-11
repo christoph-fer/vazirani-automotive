@@ -29,10 +29,10 @@ a {
 .drawer{
   display: grid;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   width: 100vw;
   height: 0vh;
-  background-color: rgba($color: $shul-dark, $alpha: 0.5);
+  background-color: rgba($color: $shul-dark, $alpha: 0.8);
   backdrop-filter: blur(50px);
   align-content: center;
   transition: 0.6s cubic-bezier(0.83, 0, 0.17, 1);
@@ -72,7 +72,7 @@ a {
   .drop-down{
     display: none;
     position: absolute;
-    z-index: 2;
+    z-index: 4;
     height: fit-content;
     width: 200px;
     background-color: rgba($color: $shul-dark, $alpha: 0.5);
@@ -92,7 +92,7 @@ a {
 .header{
   position: absolute;
   top: 0;
-  z-index: 1;
+  z-index: 3;
   display: grid;
   grid-template-columns: 1fr 1fr auto 1fr 1fr;
   width: 100%;

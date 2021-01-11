@@ -45,7 +45,7 @@
 }
 
 .we-build-sexxy {
-  position: fixed;
+  position: absolute;
   color: #FED697;
   font-family: "Arian";
   font-weight: bold;
@@ -278,7 +278,6 @@
 
 @media screen and (max-width: 640px) {
   .design-sec1 {
-    height: 65vh;
     background-size: contain;
   }
 }
@@ -318,12 +317,7 @@
 @media screen and (max-width: 640px) {
   .design-sec1 .design-feature-icons {
     width: 95vw;
-  }
-}
-
-@media screen and (max-width: 640px) {
-  .design-sec1 .design-feature-icons {
-    row-gap: 70px;
+    row-gap: 30px;
     -ms-grid-columns: auto auto auto;
         grid-template-columns: auto auto auto;
   }
@@ -351,18 +345,18 @@
   -ms-grid-column-align: center;
       justify-self: center;
   justify-items: center;
+  height: 100px;
 }
 
 .design-sec1 .design-feature-icons > div img {
   -o-object-fit: contain;
      object-fit: contain;
-  width: 25px;
-  height: 100%;
+  height: 25px;
 }
 
 @media screen and (max-width: 640px) {
   .design-sec1 .design-feature-icons > div img {
-    width: 20px;
+    height: 22px;
   }
 }
 
@@ -433,6 +427,7 @@
 
 .design-sec2 .shul-design-development h2 {
   font-size: 32px;
+  font-weight: 600;
 }
 
 .design-sec2 .shul-design-development p {
@@ -470,6 +465,7 @@
 
 .our-team-experience h2 {
   font-family: "Futura";
+  font-weight: 600;
   font-size: 32px;
   color: #D8EAF2;
 }
@@ -517,6 +513,7 @@
 
 .our-customers h2 {
   font-family: "Futura";
+  font-weight: 600;
   font-size: 32px;
   color: #D8EAF2;
 }
@@ -671,6 +668,7 @@
 
 .battery .battery-desc h2 {
   font-size: 42px;
+  font-weight: 600;
 }
 
 @media screen and (max-width: 640px) {
@@ -797,10 +795,10 @@ a {
   display: -ms-grid;
   display: grid;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   width: 100vw;
   height: 0vh;
-  background-color: rgba(30, 30, 36, 0.5);
+  background-color: rgba(30, 30, 36, 0.8);
   -webkit-backdrop-filter: blur(50px);
           backdrop-filter: blur(50px);
   -ms-flex-line-pack: center;
@@ -853,7 +851,7 @@ a {
 .nav-mobile .drop-down {
   display: none;
   position: absolute;
-  z-index: 2;
+  z-index: 4;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -879,7 +877,7 @@ a {
 .header {
   position: absolute;
   top: 0;
-  z-index: 1;
+  z-index: 3;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr auto 1fr 1fr;
