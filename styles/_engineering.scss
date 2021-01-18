@@ -8,7 +8,7 @@
         width: 60vw;
         justify-self: center;
         @media screen and (max-width: 1440px){
-            width: 80vw;
+            width: 65vw;
         }
         @media screen and (max-width: 1024px){
             width: 80vw;
@@ -19,20 +19,20 @@
         @media screen and (max-width: 640px){
             width: 95vw;
             row-gap: 30px;
-            grid-template-columns: auto auto auto;
+            // grid-template-columns: auto auto auto;
         }
-        .push{
-            @media screen and (max-width: 640px){
-                grid-column: 1 / span 2;
-                margin-left: -5vw;
-            }
-        }
-        .push2{
-            @media screen and (max-width: 640px){
-                grid-column: 3 / span -1;
-                margin-left: -25vw;
-            }
-        }
+        // .push{
+        //     @media screen and (max-width: 640px){
+        //         grid-column: 1 / span 2;
+        //         margin-left: -5vw;
+        //     }
+        // }
+        // .push2{
+        //     @media screen and (max-width: 640px){
+        //         grid-column: 3 / span -1;
+        //         margin-left: -25vw;
+        //     }
+        // }
         >div{
             display: grid;
             justify-self: center;
@@ -51,13 +51,14 @@
             p{
                 font-family: 'Arian';
                 font-weight: bold;
-                font-size: 16px;
+                font-size: 13px;
                 color: $shul_yellow;
                 text-align: center;
                 justify-self: center;
                 margin-block-start: 0.5em;
+                opacity: 0.7;
                 @media screen and (max-width: 640px){
-                    font-size: 13px;
+                    font-size: 11px;
                 }
             }
         }
@@ -84,7 +85,7 @@
             grid-template-rows: auto 40vw;
         }
         h2{
-            font-size: 42px;
+            font-size: 34px;
             font-weight: 600;
             @media screen and (max-width: 640px){
                 font-size: 32px;
@@ -92,7 +93,7 @@
         }
         p{
             max-width: 800px;
-            font-size: 18px;
+            font-size: 14px;
             @media screen and (max-width: 640px){
                 font-size: 16px;
             }
@@ -119,7 +120,7 @@
             margin-bottom: 3vw;
         }
         h3{
-            font-size: 26px;
+            font-size: 20px;
             font-weight: 400;
             margin-block-end: 0.2em;
             @media screen and (max-width: 640px){
@@ -127,9 +128,9 @@
             }
         }
         p{
-            color: $shul_yellow;
+            color: $shul_yellow2;
             max-width: 600px;
-            font-size: 16px;
+            font-size: 14px;
             opacity: 0.6;
         }
         .battery-details-pic{

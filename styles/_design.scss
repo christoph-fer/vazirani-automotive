@@ -22,7 +22,7 @@
         width: 60vw;
         justify-self: center;
         @media screen and (max-width: 1440px){
-            width: 80vw;
+            width: 65vw;
         }
         @media screen and (max-width: 1024px){
             width: 80vw;
@@ -33,20 +33,20 @@
         @media screen and (max-width: 640px){
             width: 95vw;
             row-gap: 30px;
-            grid-template-columns: auto auto auto;
+            // grid-template-columns: auto auto auto;
         }
-        .push{
-            @media screen and (max-width: 640px){
-                grid-column: 1 / span 2;
-                margin-left: -5vw;
-            }
-        }
-        .push2{
-            @media screen and (max-width: 640px){
-                grid-column: 3 / span -1;
-                margin-left: -25vw;
-            }
-        }
+        // .push{
+        //     @media screen and (max-width: 640px){
+        //         grid-column: 1 / span 2;
+        //         margin-left: -5vw;
+        //     }
+        // }
+        // .push2{
+        //     @media screen and (max-width: 640px){
+        //         grid-column: 3 / span -1;
+        //         margin-left: -25vw;
+        //     }
+        // }
         >div{
             display: grid;
             justify-self: center;
@@ -65,13 +65,14 @@
             p{
                 font-family: 'Arian';
                 font-weight: bold;
-                font-size: 16px;
+                font-size: 13px;
                 color: $shul_yellow;
                 text-align: center;
                 justify-self: center;
                 margin-block-start: 0.5em;
+                opacity: 0.7;
                 @media screen and (max-width: 640px){
-                    font-size: 13px;
+                    font-size: 11px;
                 }
             }
         }
@@ -111,11 +112,11 @@
             font-weight: 600;
         }
         p{
-            font-size: 18px;
+            font-size: 14px;
             opacity: 0.5;
         }
         ul{
-            font-size: 18px;
+            font-size: 16px;
             padding-inline-start: 12px;
             li{
                 padding: 5px;
@@ -140,9 +141,10 @@
     padding: 5vw 5vw 0vw 5vw;
     h2{
         font-family: "Futura";
-        font-weight: 600;
-        font-size: 32px;
+        font-weight: 400;
+        font-size: 26px;
         color: $shul_blue;
+        opacity: 0.7;
         @media screen and (max-width: 640px){
             font-size: 24px;
         }
@@ -172,8 +174,9 @@
     height: fit-content;
     h2{
         font-family: "Futura";
-        font-weight: 600;
-        font-size: 32px;
+        font-weight: 400;
+        font-size: 26px;
+        opacity: 0.7;
         color: $shul_blue;
         @media screen and (max-width: 640px){
             font-size: 24px;

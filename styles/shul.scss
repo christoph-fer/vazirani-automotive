@@ -29,9 +29,11 @@ a {
 .drawer{
   display: grid;
   position: fixed;
+  right: 0;
+  direction: rtl;
   z-index: 2;
-  width: 100vw;
-  height: 0vh;
+  width: 0vw;
+  height: 100vh;
   background-color: rgba($color: $shul-dark, $alpha: 0.8);
   backdrop-filter: blur(50px);
   align-content: center;
@@ -47,7 +49,7 @@ a {
 
 .drawer.active{
   display: grid;
-  height: 100vh;
+  width: 80vw;
   opacity: 1;
 }
   
@@ -61,7 +63,7 @@ a {
   text-align: center;
   align-self: center;
   transition: 600ms;
-  width: 100vw;
+  width: 80vw;
   height: 50px;
   align-items: center;
   position: relative;
@@ -102,9 +104,9 @@ a {
   }
   .shul-v-logo{
     justify-self: left;
-    width: 50px;
-    height: 50px;
-    padding: 30px;
+    width: 45px;
+    height: 45px;
+    padding: 25px;
     @media screen and (max-width: 640px){
       display: none;
     }
@@ -112,8 +114,8 @@ a {
   .shul-vazirani-logo{
     justify-self: right;  
     width: 250px;
-    height: 40px;
-    padding: 30px;
+    height: 33px;
+    padding: 25px;
     @media screen and (max-width: 640px){
       width: 200px;
     }
@@ -128,12 +130,13 @@ a {
     display: grid;
     font-family: "Arian";
     color: $shul_yellow;
-    font-size: 24px;
+    font-size: 16px;
     font-weight: bold;
     text-align: center;
     align-self: center;
     transition: 600ms;
     width: 50px;
+    opacity: 0.7;
     position: relative;
     cursor: pointer;
     a:hover{
@@ -181,45 +184,31 @@ a {
 .footer{
   display: grid;
   background-image: url("../images/FOOTER\ WEBSITE\ V\ BANNER1.png");
-  height: 220px;
+  height: fit-content;
   background-size: cover;
   .legal{
     text-align: center;
-    color: $shul_yellow;
+    color: white;
     font-family: "Futura";
-    font-size: 15px;
+    font-size: 12px;
     opacity: 0.3;
-  }
-  .shul-footer-graphic{
-    width: 350px;
-    display: grid;
-    height: 50px;
-    justify-self: right;
-    align-self: flex-end;
-    @media screen and (max-width: 1024px){
-      width: 200px;
-    }
-    img{
-      object-fit: contain;
-      width: 100%;
-      height: 100%;
-    }
+    padding-bottom: 20px;
   }
 }
 
 .contact{
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 1fr 1fr;
   max-width: 1600px;
   width: 100%;
-  font-size: 20px;
+  font-size: 16px;
   margin-left: auto;
   margin-right: auto;
   font-family: "Arian";
   color: $shul_yellow;
   font-weight: bold;
   padding: 30px 0px 30px 0px;
-  align-items: flex-end;
+  align-items: center;
   @media screen and (max-width: 720px){
     grid-template-columns: 1fr;
     text-align: center;
@@ -231,22 +220,39 @@ a {
     }
     .title{
       opacity: 0.5;
-      font-size: 18px;
+      font-size: 14px;
     }
   }
-  .social-media{
-    margin-right: 5vw;
+  .shul-footer-graphic{
     display: grid;
-    grid-template-columns: auto auto auto;
-    width: fit-content;
+    width: 320px;
     justify-self: right;
-    column-gap: 15px;
+    margin-right: 5vw;
+    // margin-left: 17vw;
+    img{
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+    }
     @media screen and (max-width: 720px){
       justify-self: center;
-      margin-right: 0px;
       margin-top: 50px;
     }
   }
-  
+}
+
+.social-media{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 15px;
+  position: relative;
+  width: 120px;
+  left: 220px;
+  top: -20px;
+  // @media screen and (max-width: 720px){
+  //   justify-self: center;
+  //   margin-right: 0px;
+  //   margin-top: 50px;
+  // }
 }
 
