@@ -826,12 +826,13 @@ a {
   position: fixed;
   right: 0;
   direction: rtl;
+  padding-left: 50px;
   z-index: 2;
   width: 0vw;
   height: 100vh;
-  background-color: rgba(30, 30, 36, 0.8);
-  -webkit-backdrop-filter: blur(50px);
-          backdrop-filter: blur(50px);
+  background-color: rgba(30, 30, 36, 0.5);
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
   -ms-flex-line-pack: start;
       align-content: flex-start;
   text-align: left;
@@ -868,15 +869,10 @@ a {
   color: #FED697;
   font-size: 18px;
   font-weight: bold;
-  text-align: center;
-  align-self: flex-start;
   -webkit-transition: 600ms;
   transition: 600ms;
   width: 60vw;
   height: 50px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   position: relative;
   opacity: 0.7;
   cursor: pointer;
@@ -889,11 +885,11 @@ a {
 }
 
 .nav-mobile span::before {
-  content: " _";
+  content: "_";
   font-size: 15px;
   color: #FED697;
   position: absolute;
-  bottom: 24px;
+  bottom: 35px;
   margin-left: 1.7px;
 }
 
@@ -928,17 +924,13 @@ a {
   color: #FED697;
   font-size: 16px;
   font-weight: bold;
-  text-align: center;
   -webkit-transition: 0.6s cubic-bezier(0.83, 0, 0.17, 1);
   transition: 0.6s cubic-bezier(0.83, 0, 0.17, 1);
   z-index: 4;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  width: 200px;
   top: 50px;
-  -ms-grid-column-align: center;
-      justify-self: center;
   border-radius: 5px;
   left: -64px;
 }
@@ -993,6 +985,7 @@ a {
   .header .shul-v-logo {
     width: 25px;
     padding: 15px;
+    height: 37px;
   }
 }
 
@@ -1135,15 +1128,14 @@ a {
   color: #FED697;
   font-weight: bold;
   padding: 30px 0px 30px 0px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 @media screen and (max-width: 720px) {
   .contact {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
     text-align: center;
   }
 }
@@ -1161,6 +1153,10 @@ a {
 .contact .email .title {
   opacity: 0.5;
   font-size: 14px;
+}
+
+.contact .email .email-id {
+  font-family: 'Futura';
 }
 
 .contact .shul-footer-graphic {
@@ -1197,6 +1193,6 @@ a {
   position: relative;
   width: 120px;
   left: 220px;
-  top: -20px;
+  top: 0px;
 }
 /*# sourceMappingURL=shul.css.map */
