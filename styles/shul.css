@@ -1166,6 +1166,7 @@ a {
   -ms-grid-column-align: right;
       justify-self: right;
   margin-right: 5vw;
+  height: 100px;
 }
 
 .contact .shul-footer-graphic img {
