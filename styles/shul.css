@@ -1134,8 +1134,8 @@ a {
   .contact {
     -ms-grid-columns: auto;
         grid-template-columns: auto;
-    -ms-grid-rows: auto auto;
-        grid-template-rows: auto auto;
+    grid-auto-rows: minmax(-webkit-min-content, -webkit-max-content);
+    grid-auto-rows: minmax(min-content, max-content);
     text-align: center;
   }
 }

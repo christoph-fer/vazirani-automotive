@@ -281,7 +281,7 @@ a {
   //align-items: center;
   @media screen and (max-width: 720px){
     grid-template-columns: auto;
-    grid-template-rows: auto auto;
+    grid-auto-rows: minmax(min-content, max-content);
     text-align: center;
   }
   .email{
