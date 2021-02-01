@@ -33,6 +33,10 @@ a {
   @media screen and (max-width: 1024px){
     display: block;
   }
+  @media screen and (max-width: 480px){
+    top: 27px;
+    right: 25px;
+  }
 }
 .drawer{
   display: grid;
@@ -45,11 +49,12 @@ a {
   background-color: rgba($color: $shul-dark, $alpha: 0.8);
   backdrop-filter: blur(50px);
   align-content: flex-start;
+  text-align: left;
   padding-top: 30vh;
   transition: 0.6s cubic-bezier(0.83, 0, 0.17, 1);
   opacity: 0;
   .divider{
-    border-bottom: 1px solid $shul_yellow;
+    border-bottom: 0px solid $shul_yellow;
     opacity: 0.5;
     width: 200px;
     justify-self: center;
@@ -62,7 +67,7 @@ a {
 
 .drawer.active{
   display: grid;
-  width: 77vw;
+  width: 60vw;
   opacity: 1;
 }
   
@@ -76,7 +81,7 @@ a {
   text-align: center;
   align-self: flex-start;
   transition: 600ms;
-  width: 80vw;
+  width: 60vw;
   height: 50px;
   align-items: center;
   position: relative;
@@ -85,6 +90,16 @@ a {
   transition: 0.6s cubic-bezier(0.83, 0, 0.17, 1);
   a:hover{
     opacity: 1;
+  }
+  span{
+    &::before{
+      content: " _";
+      font-size: 15px;
+      color: $shul_yellow;
+      position: absolute;
+      bottom: 24px;
+      margin-left: 1.7px;
+    }
   }
   .shul-u{
     position: absolute;
@@ -149,6 +164,7 @@ a {
     padding: 25px;
     @media screen and (max-width: 480px){
       width: 25px;
+      padding: 15px;
     }
   }
   .shul-vazirani-logo{
@@ -163,7 +179,7 @@ a {
     }
     @media screen and (max-width: 480px){
       width: 120px;
-      padding: 30px;
+      padding: 20px;
     }
   }
   img{
@@ -228,6 +244,7 @@ a {
     }
     @media screen and (max-width: 480px){
       height: 30px;
+      margin: 20px 0px 20px 0px;
     }
   }
 }
