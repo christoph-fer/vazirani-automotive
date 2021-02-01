@@ -888,38 +888,13 @@ a {
   opacity: 1;
 }
 
-.nav-mobile span::before {
-  content: "_";
-  font-size: 15px;
-  color: #FED697;
-  position: absolute;
-  bottom: 35px;
-  margin-left: 1.7px;
-}
-
 .nav-mobile .shul-u {
   position: absolute;
   bottom: 24px;
   color: #FED697;
   font-size: 13px;
-}
-
-@media screen and (max-width: 1366px) {
-  .nav-mobile .shul-u {
-    left: 30vw;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .nav-mobile .shul-u {
-    left: 41vw;
-  }
-}
-
-@media screen and (max-width: 640px) {
-  .nav-mobile .shul-u {
-    left: 42vw;
-  }
+  bottom: 36px;
+  left: 26px;
 }
 
 .drop-down {
