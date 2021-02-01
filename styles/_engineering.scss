@@ -43,9 +43,9 @@
                 // @media screen and (max-width: 640px){
                 //     width: 20px;
                 // }
-                height: 25px;
+                height: 60px;
                 @media screen and (max-width: 640px){
-                    height: 22px;
+                    height: 50px;
                 }
             }
             p{
@@ -55,10 +55,11 @@
                 color: $shul_yellow;
                 text-align: center;
                 justify-self: center;
-                margin-block-start: 0.5em;
+                margin-block-start: -1em;
                 opacity: 0.7;
                 @media screen and (max-width: 640px){
                     font-size: 11px;
+                    margin-block-start: -2em;
                 }
             }
         }

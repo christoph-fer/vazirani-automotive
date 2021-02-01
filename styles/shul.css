@@ -336,12 +336,12 @@
 .design-sec1 .design-feature-icons > div img {
   -o-object-fit: contain;
      object-fit: contain;
-  height: 25px;
+  height: 60px;
 }
 
 @media screen and (max-width: 640px) {
   .design-sec1 .design-feature-icons > div img {
-    height: 22px;
+    height: 50px;
   }
 }
 
@@ -353,14 +353,16 @@
   text-align: center;
   -ms-grid-column-align: center;
       justify-self: center;
-  -webkit-margin-before: 0.5em;
-          margin-block-start: 0.5em;
+  -webkit-margin-before: -1em;
+          margin-block-start: -1em;
   opacity: 0.7;
 }
 
 @media screen and (max-width: 640px) {
   .design-sec1 .design-feature-icons > div p {
     font-size: 11px;
+    -webkit-margin-before: -2em;
+            margin-block-start: -2em;
   }
 }
 
@@ -598,12 +600,12 @@
 .eng-sec1 .eng-feature-icons > div img {
   -o-object-fit: contain;
      object-fit: contain;
-  height: 25px;
+  height: 60px;
 }
 
 @media screen and (max-width: 640px) {
   .eng-sec1 .eng-feature-icons > div img {
-    height: 22px;
+    height: 50px;
   }
 }
 
@@ -615,14 +617,16 @@
   text-align: center;
   -ms-grid-column-align: center;
       justify-self: center;
-  -webkit-margin-before: 0.5em;
-          margin-block-start: 0.5em;
+  -webkit-margin-before: -1em;
+          margin-block-start: -1em;
   opacity: 0.7;
 }
 
 @media screen and (max-width: 640px) {
   .eng-sec1 .eng-feature-icons > div p {
     font-size: 11px;
+    -webkit-margin-before: -2em;
+            margin-block-start: -2em;
   }
 }
 
@@ -815,7 +819,7 @@ a {
 
 @media screen and (max-width: 480px) {
   .drawer-icon {
-    top: 27px;
+    top: 28px;
     right: 25px;
   }
 }
@@ -984,7 +988,7 @@ a {
 @media screen and (max-width: 480px) {
   .header .shul-v-logo {
     width: 25px;
-    padding: 15px;
+    padding: 16px;
     height: 37px;
   }
 }
@@ -1157,6 +1161,7 @@ a {
 
 .contact .email .email-id {
   font-family: 'Futura';
+  font-weight: 300;
 }
 
 .contact .shul-footer-graphic {
@@ -1166,7 +1171,7 @@ a {
   -ms-grid-column-align: right;
       justify-self: right;
   margin-right: 5vw;
-  height: 100px;
+  height: 80px;
 }
 
 .contact .shul-footer-graphic img {
@@ -1189,11 +1194,15 @@ a {
   display: grid;
   -ms-grid-columns: auto auto auto;
       grid-template-columns: auto auto auto;
-  -webkit-column-gap: 15px;
-          column-gap: 15px;
+  -webkit-column-gap: 0px;
+          column-gap: 0px;
   position: relative;
   width: 120px;
-  left: 220px;
-  top: 0px;
+  left: 200px;
+  top: -20px;
+}
+
+.social-media div {
+  height: 25px;
 }
 /*# sourceMappingURL=shul.css.map */
