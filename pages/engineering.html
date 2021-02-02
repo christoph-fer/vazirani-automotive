@@ -208,6 +208,9 @@
         });
         $(".drawer-icon").click(function(){
             $(".drawer").toggleClass("active");
+            var src = $(this).attr('src');
+            var newsrc = (src=='../images/ham_menu_close.svg') ? '../images/ham_menu_icon.svg' : '../images/ham_menu_close.svg';
+            $(this).attr('src', newsrc );
         });
     </script>
 </body>

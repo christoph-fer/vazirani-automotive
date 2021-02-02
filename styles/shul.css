@@ -897,6 +897,13 @@ a {
   left: 26px;
 }
 
+@supports (-webkit-touch-callout: none) {
+  .nav-mobile .shul-u {
+    /* CSS specific to iOS devices */
+    left: 28px;
+  }
+}
+
 .drop-down {
   display: none;
   font-family: "Arian";

@@ -109,6 +109,10 @@ a {
     font-size: 13px;
     bottom: 36px;
     left: 26px;
+    @supports (-webkit-touch-callout: none) {
+      /* CSS specific to iOS devices */
+      left: 28px; 
+    }
     // @media screen and (max-width: 1366px){
     //   left: 30vw;
     // }
