@@ -436,9 +436,11 @@
 @media screen and (max-width: 640px) {
   .design-sec2 .shul-design-development h2 {
     font-size: 24px;
+    margin-bottom: 26px;
   }
   .design-sec2 .shul-design-development p {
     font-size: 14px;
+    margin-bottom: 20px;
   }
   .design-sec2 .shul-design-development ul {
     font-size: 14px;
@@ -448,9 +450,11 @@
 @media screen and (max-width: 580px) {
   .design-sec2 .shul-design-development h2 {
     font-size: 18px;
+    margin-bottom: 20px;
   }
   .design-sec2 .shul-design-development p {
     font-size: 10px;
+    margin-bottom: 15px;
   }
   .design-sec2 .shul-design-development ul {
     font-size: 10px;
@@ -985,7 +989,7 @@ a {
 .nav-mobile .drop-down-arrow {
   position: absolute;
   left: 80px;
-  top: 5px;
+  top: 4px;
 }
 
 .nav-mobile .shul-u {
