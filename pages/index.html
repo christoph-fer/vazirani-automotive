@@ -12,6 +12,7 @@
 </head>
 <body>
     <img class="drawer-icon" height="17px" src="../images/ham_menu_icon.svg">
+    <img class="drawer-icon-close" height="17px" src="../images/ham_menu_close.svg">
     <div class="drawer">
        
         <div class="nav-mobile">
@@ -23,7 +24,8 @@
         <!-- <div class="divider"></div> -->
 
         <div class="nav-mobile">          
-            <a id="services-mobile">Services</a>
+            <a id="services-mobile">Services </a>
+            <img class="drop-down-arrow" src="../images/drop-down-icon.svg">
         </div>
 
         <div class="drop-down">
@@ -156,9 +158,11 @@
         });
         $(".drawer-icon").click(function(){
             $(".drawer").toggleClass("active");
-            var src = $(this).attr('src');
-            var newsrc = (src=='../images/ham_menu_close.svg') ? '../images/ham_menu_icon.svg' : '../images/ham_menu_close.svg';
-            $(this).attr('src', newsrc );
+            $(".drawer-icon").toggleClass("close");
+            $(".drawer-icon-close").toggleClass("close");
+            // var src = $(this).attr('src');
+            // var newsrc = (src=='../images/ham_menu_close.svg') ? '../images/ham_menu_icon.svg' : '../images/ham_menu_close.svg';
+            // $(this).attr('src', newsrc );
         });
     </script>
 </body>
