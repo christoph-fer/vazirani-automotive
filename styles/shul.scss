@@ -12,6 +12,10 @@ body {
     background-color: $shul_dark;
 }
 
+video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+}
+
 .shul-u{
   position: absolute;
   left: 31px;
@@ -306,7 +310,7 @@ a {
   }
   .shul-footer-graphic{
     display: grid;
-    width: 320px;
+    width: 240px;
     justify-self: right;
     margin-right: 5vw;
     height: 80px;
@@ -318,7 +322,8 @@ a {
     }
     @media screen and (max-width: 720px){
       justify-self: center;
-      margin-top: 50px;
+      margin-top: 40px;
+      margin-right: 0px;
     }
   }
 }
@@ -329,8 +334,8 @@ a {
   column-gap: 0px;
   position: relative;
   width: 120px;
-  left: 200px;
-  top: -20px;
+  left: 145px;
+  top: -10px;
   div{
     height: 25px;
   }

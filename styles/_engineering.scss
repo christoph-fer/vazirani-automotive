@@ -84,6 +84,7 @@
         }
         @media screen and (max-width: 480px){
             //grid-template-rows: auto 40vw;
+            grid-template-columns: auto auto;
         }
         h2{
             font-size: 34px;
@@ -100,7 +101,7 @@
             font-size: 14px;
             @media screen and (max-width: 640px){
                 font-size: 16px;
-                max-width: 45vw;
+                max-width: 43vw;
             }
             @media screen and (max-width: 580px){
                 font-size: 10px;
@@ -112,7 +113,7 @@
                 object-fit: contain;
                 height: 100%;
                 width: 100%;
-                object-position: bottom;
+                //object-position: bottom;
             }
         }
     }
@@ -129,6 +130,12 @@
         }
         >div>div{
             margin-bottom: 3vw;
+            @media screen and (max-width: 1024px){
+                margin-bottom: 40px;
+            }
+            @media screen and (max-width: 480px){
+                margin-bottom: 35px;
+            }
         }
         h3{
             font-size: 20px;
