@@ -169,6 +169,10 @@ a {
     position: absolute;
     left: 80px;
     top: 4px;
+    @supports (-webkit-touch-callout: none) {
+      /* CSS specific to iOS devices */
+      left: 85px; 
+    }
   }
   .shul-u{
     position: absolute;
@@ -256,7 +260,11 @@ a {
     a:hover{
       opacity: 0.7;
     }
-    
+    .drop-down-arrow{
+      position: absolute;
+      left: 60px;
+      top: 2px;
+    }
     .drop-down{
       display: grid;
       position: absolute;
