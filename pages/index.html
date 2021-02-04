@@ -9,6 +9,12 @@
     <meta name="viewport" content="width=device-width" />
     <meta name="theme-color" content="#1E1E24" />
     <link rel="icon" href="../images/vazirani-v.png" type="image/png" sizes="16x16" />
+
+    <!-- Gallery plugin -->
+    <link type="text/css" href="../css/jquery.bbslider.css" rel="stylesheet" />
+    <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="../js/jquery.bbslider.min.js"></script>
 </head>
 <body>
     <img class="drawer-icon" height="17px" src="../images/ham_menu_icon.svg">
@@ -82,7 +88,14 @@
 
         <div class="home-sec3">
             <div class="shul-gallery">
-                <img src="../images/HOME PAGE GALLERY_CHUNKY.jpg">
+                <!-- <img src="../images/HOME PAGE GALLERY_CHUNKY.jpg"> -->
+                <div id="auto">
+                    <div><img src="../images/HOME PAGE GALLERY_CHUNKY.jpg" alt="" /></div>
+                    <div><img src="../images/HOME PAGE GALLERY_CHUNKY2.jpg" alt="" /></div>
+                    <div><img src="../images/HOME PAGE GALLERY_CHUNKY3.jpg" alt="" /></div>
+                    <div><img src="../images/HOME PAGE GALLERY_CHUNKYF34.jpg" alt="" /></div>
+                </div>
+                    
             </div>
             <div class="shul-features">
                 <div class="shul-logo">
@@ -166,6 +179,25 @@
             // var src = $(this).attr('src');
             // var newsrc = (src=='../images/ham_menu_close.svg') ? '../images/ham_menu_icon.svg' : '../images/ham_menu_close.svg';
             // $(this).attr('src', newsrc );
+        });
+    </script>
+
+    <!-- Gallery plugin -->
+    <script>
+        $('#auto').bbslider({
+            auto: true,
+            timer: 3000,
+            duration: 800, 
+            loop: true,
+            controls: true,
+            controlsText:[                         
+                '<a class="prevcontrol" href="#">‹</a>',
+                '<a class="nextcontrol" href="#">›</a>'
+            ],
+            touch: true,
+            dragControls: true,
+            transition: 'slide',
+            easing: 'easeInOutCirc'
         });
     </script>
 </body>
