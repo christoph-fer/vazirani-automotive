@@ -108,6 +108,83 @@
   }
 }
 
+.home-sec3 .prevcontrol {
+  position: absolute;
+  z-index: 5;
+  top: 25%;
+  color: white;
+  font-family: "Arian";
+  font-size: 72px;
+  opacity: 0.2;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  padding: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .home-sec3 .prevcontrol {
+    top: 30%;
+    font-size: 125px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-sec3 .prevcontrol {
+    top: 25%;
+    font-size: 125px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .home-sec3 .prevcontrol {
+    top: 17%;
+    font-size: 72px;
+  }
+}
+
+.home-sec3 .prevcontrol:hover {
+  opacity: 1;
+}
+
+.home-sec3 .nextcontrol {
+  position: absolute;
+  z-index: 5;
+  right: 0;
+  top: 25%;
+  color: white;
+  font-family: "Arian";
+  font-size: 72px;
+  opacity: 0.2;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  padding: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .home-sec3 .nextcontrol {
+    top: 30%;
+    font-size: 125px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-sec3 .nextcontrol {
+    top: 25%;
+    font-size: 125px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .home-sec3 .nextcontrol {
+    top: 17%;
+    font-size: 72px;
+  }
+}
+
+.home-sec3 .nextcontrol:hover {
+  opacity: 1;
+}
+
 .home-sec3 .shul-gallery img {
   width: 100%;
   height: 100%;
@@ -383,6 +460,83 @@
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
+}
+
+.design-sec2 .prevcontrol {
+  position: absolute;
+  z-index: 5;
+  top: 30%;
+  color: white;
+  font-family: "Arian";
+  font-size: 72px;
+  opacity: 0.3;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  padding: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .design-sec2 .prevcontrol {
+    top: 30%;
+    font-size: 125px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .design-sec2 .prevcontrol {
+    top: 25%;
+    font-size: 125px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .design-sec2 .prevcontrol {
+    top: 17%;
+    font-size: 72px;
+  }
+}
+
+.design-sec2 .prevcontrol:hover {
+  opacity: 1;
+}
+
+.design-sec2 .nextcontrol {
+  position: absolute;
+  z-index: 5;
+  right: 0;
+  top: 30%;
+  color: white;
+  font-family: "Arian";
+  font-size: 72px;
+  opacity: 0.3;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  padding: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .design-sec2 .nextcontrol {
+    top: 30%;
+    font-size: 125px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .design-sec2 .nextcontrol {
+    top: 25%;
+    font-size: 125px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .design-sec2 .nextcontrol {
+    top: 17%;
+    font-size: 72px;
+  }
+}
+
+.design-sec2 .nextcontrol:hover {
+  opacity: 1;
 }
 
 @media screen and (max-width: 1024px) {
