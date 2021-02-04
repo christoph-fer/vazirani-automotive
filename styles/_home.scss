@@ -116,6 +116,13 @@
       }
     }
     .shul-gallery{
+      height: 100% !important;
+      @media screen and (max-width: 1024px){
+        height: 70vw !important;
+      }
+      >div{
+        height: inherit !important;
+      }
       img{
         width: 100%;
         height: 100%;

@@ -37,10 +37,10 @@
 	transition-timing-function:inherit;
 }
 .bbslider-wrapper.loop-false.first-panel .prev-control-wrapper {
-	/* display:none; */
+	display:none;
 }
 .bbslider-wrapper.loop-false.last-panel .next-control-wrapper {
-	/* display:none; */
+	display:none;
 }
 .bbslider-wrapper.carousel > .panel {
 	overflow:hidden;

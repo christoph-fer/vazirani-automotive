@@ -143,14 +143,19 @@
         }
       }
     .shul-gallery{ 
+        height: 100% !important;
         @media screen and (max-width: 1024px){
             grid-row: 2;
+            height: 70vw !important;
         }
-      img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
+        >div{
+            height: inherit !important;
+          }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
     .shul-design-development{
         color: $shul_blue;

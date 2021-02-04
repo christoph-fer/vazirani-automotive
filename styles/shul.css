@@ -185,6 +185,20 @@
   opacity: 1;
 }
 
+.home-sec3 .shul-gallery {
+  height: 100% !important;
+}
+
+@media screen and (max-width: 1024px) {
+  .home-sec3 .shul-gallery {
+    height: 70vw !important;
+  }
+}
+
+.home-sec3 .shul-gallery > div {
+  height: inherit !important;
+}
+
 .home-sec3 .shul-gallery img {
   width: 100%;
   height: 100%;
@@ -539,11 +553,20 @@
   opacity: 1;
 }
 
+.design-sec2 .shul-gallery {
+  height: 100% !important;
+}
+
 @media screen and (max-width: 1024px) {
   .design-sec2 .shul-gallery {
     -ms-grid-row: 2;
     grid-row: 2;
+    height: 70vw !important;
   }
+}
+
+.design-sec2 .shul-gallery > div {
+  height: inherit !important;
 }
 
 .design-sec2 .shul-gallery img {
