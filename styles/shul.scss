@@ -82,6 +82,8 @@ a {
   height: 100vh;
   background-color: rgba($color: $shul-dark, $alpha: 0.3);
   backdrop-filter: blur(20px);
+  -ms-backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   align-content: flex-start;
   text-align: left;
   padding-top: 30vh;

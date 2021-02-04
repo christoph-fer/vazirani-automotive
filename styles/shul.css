@@ -1077,8 +1077,9 @@ a {
   width: 0vw;
   height: 100vh;
   background-color: rgba(30, 30, 36, 0.3);
+  backdrop-filter: blur(20px);
+  -ms-backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
   -ms-flex-line-pack: start;
       align-content: flex-start;
   text-align: left;
