@@ -1434,6 +1434,13 @@ a {
   height: 40px;
 }
 
+@supports (-webkit-touch-callout: none) {
+  .contact .shul-footer-graphic {
+    /* CSS specific to iOS devices */
+    width: 247px;
+  }
+}
+
 .contact .shul-footer-graphic img {
   -o-object-fit: contain;
      object-fit: contain;

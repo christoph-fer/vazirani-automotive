@@ -367,6 +367,10 @@ a {
   .shul-footer-graphic{
     display: grid;
     width: 240px;
+    @supports (-webkit-touch-callout: none) {
+      /* CSS specific to iOS devices */
+      width: 247px; 
+    }
     justify-self: right;
     margin-right: 5vw;
     height: 40px;
