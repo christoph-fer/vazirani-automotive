@@ -108,6 +108,97 @@
   }
 }
 
+.home-sec3 .prevcontrol {
+  position: absolute;
+  z-index: 5;
+  top: 25%;
+  color: white;
+  font-family: "Arian";
+  font-size: 72px;
+  opacity: 0.2;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  padding: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .home-sec3 .prevcontrol {
+    top: 30%;
+    font-size: 125px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-sec3 .prevcontrol {
+    top: 25%;
+    font-size: 125px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .home-sec3 .prevcontrol {
+    top: 17%;
+    font-size: 72px;
+  }
+}
+
+.home-sec3 .prevcontrol:hover {
+  opacity: 1;
+}
+
+.home-sec3 .nextcontrol {
+  position: absolute;
+  z-index: 5;
+  right: 0;
+  top: 25%;
+  color: white;
+  font-family: "Arian";
+  font-size: 72px;
+  opacity: 0.2;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  padding: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .home-sec3 .nextcontrol {
+    top: 30%;
+    font-size: 125px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-sec3 .nextcontrol {
+    top: 25%;
+    font-size: 125px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .home-sec3 .nextcontrol {
+    top: 17%;
+    font-size: 72px;
+  }
+}
+
+.home-sec3 .nextcontrol:hover {
+  opacity: 1;
+}
+
+.home-sec3 .shul-gallery {
+  height: 100% !important;
+}
+
+@media screen and (max-width: 1024px) {
+  .home-sec3 .shul-gallery {
+    height: 70vw !important;
+  }
+}
+
+.home-sec3 .shul-gallery > div {
+  height: inherit !important;
+}
+
 .home-sec3 .shul-gallery img {
   width: 100%;
   height: 100%;
@@ -121,6 +212,7 @@
   font-size: 22px;
   display: -ms-grid;
   display: grid;
+  row-gap: 30px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -385,11 +477,97 @@
   }
 }
 
+.design-sec2 .prevcontrol {
+  position: absolute;
+  z-index: 5;
+  top: 30%;
+  color: white;
+  font-family: "Arian";
+  font-size: 72px;
+  opacity: 0.3;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  padding: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .design-sec2 .prevcontrol {
+    top: 30%;
+    font-size: 125px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .design-sec2 .prevcontrol {
+    top: 25%;
+    font-size: 125px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .design-sec2 .prevcontrol {
+    top: 17%;
+    font-size: 72px;
+  }
+}
+
+.design-sec2 .prevcontrol:hover {
+  opacity: 1;
+}
+
+.design-sec2 .nextcontrol {
+  position: absolute;
+  z-index: 5;
+  right: 0;
+  top: 30%;
+  color: white;
+  font-family: "Arian";
+  font-size: 72px;
+  opacity: 0.3;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  padding: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .design-sec2 .nextcontrol {
+    top: 30%;
+    font-size: 125px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .design-sec2 .nextcontrol {
+    top: 25%;
+    font-size: 125px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .design-sec2 .nextcontrol {
+    top: 17%;
+    font-size: 72px;
+  }
+}
+
+.design-sec2 .nextcontrol:hover {
+  opacity: 1;
+}
+
+.design-sec2 .shul-gallery {
+  height: 100% !important;
+}
+
 @media screen and (max-width: 1024px) {
   .design-sec2 .shul-gallery {
     -ms-grid-row: 2;
     grid-row: 2;
+    height: 70vw !important;
   }
+}
+
+.design-sec2 .shul-gallery > div {
+  height: inherit !important;
 }
 
 .design-sec2 .shul-gallery img {
@@ -900,8 +1078,9 @@ a {
   width: 0vw;
   height: 100vh;
   background-color: rgba(30, 30, 36, 0.3);
+  backdrop-filter: blur(20px);
+  -ms-backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
   -ms-flex-line-pack: start;
       align-content: flex-start;
   text-align: left;
@@ -1254,6 +1433,13 @@ a {
       justify-self: right;
   margin-right: 5vw;
   height: 40px;
+}
+
+@supports (-webkit-touch-callout: none) {
+  .contact .shul-footer-graphic {
+    /* CSS specific to iOS devices */
+    width: 247px;
+  }
 }
 
 .contact .shul-footer-graphic img {

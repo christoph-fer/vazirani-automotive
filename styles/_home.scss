@@ -62,7 +62,67 @@
       grid-template-columns: 1fr;
       
     }
+    .prevcontrol{
+      position: absolute;
+      z-index: 5;
+      top: 25%;
+      color: white;
+      font-family: "Arian";
+      font-size: 72px;
+      opacity: 0.2;
+      transition: 300ms;
+      padding: 20px;
+      @media screen and (max-width: 1024px){
+        top: 30%;
+        font-size: 125px;
+      }
+      @media screen and (max-width: 768px){
+        top: 25%;
+        font-size: 125px;
+      }
+      @media screen and (max-width: 480px){
+        top: 17%;
+        font-size: 72px;
+      }
+      &:hover{
+        opacity: 1;
+      }
+    }
+    .nextcontrol{
+      position: absolute;
+      z-index: 5;
+      right: 0;
+      top: 25%;
+      color: white;
+      font-family: "Arian";
+      font-size: 72px;
+      opacity: 0.2;
+      transition: 300ms;
+      padding: 20px;
+      @media screen and (max-width: 1024px){
+        top: 30%;
+        font-size: 125px;
+      }
+      @media screen and (max-width: 768px){
+        top: 25%;
+        font-size: 125px;
+      }
+      @media screen and (max-width: 480px){
+        top: 17%;
+        font-size: 72px;
+      }
+      &:hover{
+        opacity: 1;
+      }
+    }
     .shul-gallery{
+      height: 100% !important;
+      @media screen and (max-width: 1024px){
+        height: 70vw !important;
+      }
+      >div{
+        height: inherit !important;
+      }
       img{
         width: 100%;
         height: 100%;
@@ -74,7 +134,7 @@
       font-family: "Futura";
       font-size: 22px;
       display: grid;
-  
+      row-gap: 30px;
       @media screen and (max-width: 1024px){
         text-align: center;
         margin-top: 12vw;

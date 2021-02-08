@@ -9,6 +9,13 @@
     <meta name="viewport" content="width=device-width" />
     <meta name="theme-color" content="#1E1E24" />
     <link rel="icon" href="../images/vazirani-v.png" type="image/png" sizes="16x16" />
+
+    <!-- Gallery plugin -->
+    <link type="text/css" href="../css/jquery.bbslider.css" rel="stylesheet" />
+    <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="../js/jquery.bbslider.min.js"></script>    
+
 </head>
 <body>
     <img class="drawer-icon" height="17px" src="../images/ham_menu_icon.svg">
@@ -89,7 +96,19 @@
 
         <div class="design-sec2">
             <div class="shul-gallery">
-                <img src="../images/8DESIGN GALLERY.jpg">
+                <!-- <img src="../images/8DESIGN GALLERY.jpg"> -->
+                <div id="auto">
+                    <div><img src="../images/8DESIGN GALLERY.jpg" alt="" /></div>
+                    <div><img src="../images/9DESIGN GALLERY_Fotor3.jpg" alt="" /></div>
+                    <div><img src="../images/13DESIGN GALLERY.jpg" alt="" /></div>
+                    <div><img src="../images/DESIGN GALLERY-VR_Fotor3.jpg" alt="" /></div>
+                    <div><img src="../images/DESIGN GALLERY_Fotor43.jpg" alt="" /></div>
+                    <div><img src="../images/DESIGN GALLERY2_Fotor2_Fotore.jpg" alt="" /></div>
+                    <div><img src="../images/5DESIGN GALLERY.jpg" alt="" /></div>
+                    <div><img src="../images/11DESIGN GALLERY.jpg" alt="" /></div>
+                    <div><img src="../images/5DESIGN GALLERYaero.jpg" alt="" /></div>
+                    <div><img src="../images/2DESIGN GALLERY_Fotor.jpg" alt="" /></div>
+                </div>
             </div>
             <div class="shul-design-development">
                 <h2>Complete Design Development</h2>
@@ -111,7 +130,7 @@
             <h2>Our team experience:</h2>
             <div class="company-logos">
                 <div>
-                    <img src="../images/Volvo Transparent gold drk.png" style="margin-bottom: 6vw">
+                    <img src="../images/Volvo Transparent gold drk.png" style="margin-top: -2px;">
                 </div>
                 <div>
                     <img src="../images/Logo_Yamaha_transparent gold drk.png">
@@ -175,6 +194,25 @@
             // var src = $(this).attr('src');
             // var newsrc = (src=='../images/ham_menu_close.svg') ? '../images/ham_menu_icon.svg' : '../images/ham_menu_close.svg';
             // $(this).attr('src', newsrc );
+        });
+    </script>
+
+    <!-- Gallery plugin -->
+    <script>
+        $('#auto').bbslider({
+            auto: true,
+            timer: 3000,
+            duration: 800, 
+            loop: true,
+            controls: true,
+            controlsText:[                         
+                '<a class="prevcontrol" href="#">‹</a>',
+                '<a class="nextcontrol" href="#">›</a>'
+            ],
+            touch: true,
+            dragControls: true,
+            transition: 'slide',
+            easing: 'easeInOutCirc',
         });
     </script>
 </body>
