@@ -8,13 +8,24 @@
     <link rel="stylesheet" type="text/css" href="../styles/shul.css" />
     <meta name="viewport" content="width=device-width" />
     <meta name="theme-color" content="#1E1E24" />
-    <link rel="icon" href="../images/vazirani-v.png" type="image/png" sizes="16x16" /
+    <link rel="icon" href="../images/vazirani-v.png" type="image/png" sizes="16x16">
           
     <!-- Gallery plugin -->
     <link type="text/css" href="../css/jquery.bbslider.css" rel="stylesheet" />
     <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
     <script type="text/javascript" src="../js/jquery.bbslider.min.js"></script>
+
+    <style>
+        @media screen and (max-width: 480px){
+            .header>.shul-vazirani-logo{
+                display: none;
+            }
+            .header>.divider{
+                display: none;
+            }
+        }
+    </style>
 </head>
 <body>
     <img class="drawer-icon" height="17px" src="../images/ham_menu_icon.svg">
@@ -80,7 +91,10 @@
         </div>
 
         <div class="home-sec2">
-            <div class="divider"></div>
+            <div class="shul-vazirani-logo">
+                <a href=""><img src="../images/vazirani-full-logo-yellow.png"></a>
+            </div>
+            <!-- <div class="divider"></div> -->
             <p>The entire Universe, including all matter, is a matrix of infinite electrical impulses.</p>
             <p>It’s only natural that all our transportation goes electric. Vazirani aims to help the world make this transition seamless and fun.</p>
             <div class="divider"></div>
