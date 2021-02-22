@@ -84,7 +84,7 @@
         }
         @media screen and (max-width: 480px){
             //grid-template-rows: auto 40vw;
-            grid-template-columns: auto auto;
+            grid-template-columns: auto 45vw;
         }
         h2{
             font-size: 34px;
@@ -123,10 +123,10 @@
         grid-template-columns: 1fr 2fr;
         font-family: "Futura";
         color: $shul_yellow2;
-        padding: 1vw 5vw 5vw 5vw;
+        padding: 0px 5vw 5vw 5vw;
         @media screen and (max-width: 1024px){
             grid-template-columns: 1fr;
-            row-gap: 50px;
+            row-gap: 30px;
         }
         >div>div{
             margin-bottom: 3vw;

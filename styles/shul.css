@@ -838,8 +838,8 @@
 
 @media screen and (max-width: 480px) {
   .battery .battery-desc {
-    -ms-grid-columns: auto auto;
-        grid-template-columns: auto auto;
+    -ms-grid-columns: auto 45vw;
+        grid-template-columns: auto 45vw;
   }
 }
 
@@ -892,14 +892,14 @@
       grid-template-columns: 1fr 2fr;
   font-family: "Futura";
   color: #DCD4C8;
-  padding: 1vw 5vw 5vw 5vw;
+  padding: 0px 5vw 5vw 5vw;
 }
 
 @media screen and (max-width: 1024px) {
   .battery .battery-details {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    row-gap: 50px;
+    row-gap: 30px;
   }
 }
 
