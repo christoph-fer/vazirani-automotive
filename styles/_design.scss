@@ -35,6 +35,9 @@
             row-gap: 30px;
             // grid-template-columns: auto auto auto;
         }
+        @media screen and (max-width: 480px){
+            margin-top: 15vh;
+        }
         // .push{
         //     @media screen and (max-width: 640px){
         //         grid-column: 1 / span 2;
@@ -238,6 +241,7 @@
             }
             img{
                 object-fit: contain;
+                object-position: center;
                 height: 100%;
                 width: 100%;
             }

@@ -238,6 +238,7 @@ a {
     @media screen and (max-width: 480px){
       width: 120px;
       padding: 20px;
+      //display: none;
     }
   }
   img{
@@ -311,6 +312,7 @@ a {
       margin: 30px 0px 30px 0px;
     }
     @media screen and (max-width: 480px){
+      //display: none;
       height: 30px;
       margin: 20px 0px 20px 0px;
     }
@@ -348,12 +350,13 @@ a {
   @media screen and (max-width: 720px){
     grid-template-columns: auto;
     grid-auto-rows: minmax(min-content, max-content);
-    text-align: center;
+    text-align: left;
   }
   .email{
     margin-left: 5vw;
     @media screen and (max-width: 720px){
-      margin-left: 0px;
+      //margin-left: 0px;
+      margin-left: 7vw;
     }
     .title{
       opacity: 0.5;
@@ -366,10 +369,10 @@ a {
   }
   .shul-footer-graphic{
     display: grid;
-    width: 240px;
+    width: 245px;
     @supports (-webkit-touch-callout: none) {
       /* CSS specific to iOS devices */
-      width: 247px; 
+      width: 252px; 
     }
     justify-self: right;
     margin-right: 5vw;
@@ -381,9 +384,10 @@ a {
       height: 100%;
     }
     @media screen and (max-width: 720px){
-      justify-self: center;
+      //justify-self: center;
       margin-top: 40px;
-      margin-right: 0px;
+      margin-right: 7vw;
+      //margin-right: 0px;
     }
   }
 }

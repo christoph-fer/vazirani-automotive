@@ -21,6 +21,9 @@
             row-gap: 30px;
             // grid-template-columns: auto auto auto;
         }
+        @media screen and (max-width: 480px){
+            margin-top: 15vh;
+        }
         // .push{
         //     @media screen and (max-width: 640px){
         //         grid-column: 1 / span 2;
@@ -101,7 +104,7 @@
             font-size: 14px;
             @media screen and (max-width: 640px){
                 font-size: 16px;
-                max-width: 43vw;
+                max-width: 40vw;
             }
             @media screen and (max-width: 580px){
                 font-size: 10px;
